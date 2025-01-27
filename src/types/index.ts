@@ -1,4 +1,3 @@
-import { StaticImageData } from "next/image";
 
 interface Service {
     id: number;
