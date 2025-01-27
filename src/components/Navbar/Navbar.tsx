@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { images } from "../../../public/assets";
+import { ArrowRight } from 'lucide-react';
 
 const Navbar = () => {
   return (
@@ -31,11 +32,9 @@ const Navbar = () => {
           {/* Right Button */}
           <div className="flex items-center space-x-3 rtl:space-x-reverse">
             <a href="#contact">
-              <button
-                type="button"
-                className="p-2 rounded-lg text-white bg-custom-gradient shadow-double-inset hover:bg-none hover:text-primary hover:shadow-none border-primary border-[2px] transition-all duration-300 ease-in-out"
-              >
-                Book a consultant
+              <button className="group w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 bg-[#018380] text-white rounded-xl hover:bg-[#00ADA9] transition-all duration-300 shadow-double-inset hover:shadow-2xl transform hover:-translate-y-1 flex items-center justify-center gap-2 text-sm sm:text-base">
+                Book Appointment
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </a>
           </div>

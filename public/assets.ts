@@ -1,3 +1,3 @@
 import * as images from './Images/images'
-
-export { images }
+import Videos from "./Videos/video";
+export { images, Videos }

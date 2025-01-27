@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
+import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 
 
 export const metadata: Metadata = {
@@ -17,9 +18,10 @@ export default function RootLayout({
   return (
    
    <html lang="en">
-      <body className="font-poppins">
+      <body className="font-poppins " >
        <Navbar/>
         {children}
+        <ScrollToTop />
       </body>
     </html>
   );

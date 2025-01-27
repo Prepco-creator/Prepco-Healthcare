@@ -1,6 +1,6 @@
 import React from 'react';
-import Image from 'next/image';
-import { ArrowRight, Clock, Shield, Heart } from 'lucide-react';
+import { ArrowRight, Clock, Shield, Heart, Phone } from 'lucide-react';
+import { Videos } from '../../../public/assets';
 
 const HeroSection = () => {
   return (
@@ -33,8 +33,9 @@ const HeroSection = () => {
               Book Appointment
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
-            <button className="w-full sm:w-auto px-8 sm:px-10 py-4 bg-white border-2 border-[#D0F2F3] text-[#018380] rounded-xl hover:bg-[#E3FFFE] transition-all duration-300 flex items-center justify-center gap-2">
-              Learn More
+            <button className="group w-full sm:w-auto px-8 sm:px-10 py-4 bg-white border-2 border-[#D0F2F3] text-[#018380] rounded-xl hover:bg-[#E3FFFE] transition-all duration-300 flex items-center justify-center gap-2">
+              Contact Us
+              <Phone className="w-4 h-4 group-hover:rotate-12 transition-transform" />
             </button>
           </div>
           
@@ -71,16 +72,17 @@ const HeroSection = () => {
             <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-[#00ADA9] rounded-full blur-3xl opacity-30" />
             
             <div className="absolute inset-0 bg-[#E3FFFE] rounded-3xl transform rotate-3 transition-transform hover:rotate-6 duration-300" />
-            <div className="absolute inset-0 bg-[#D0F2F3] rounded-3xl transform -rotate-3 transition-transform hover:-rotate-6 duration-300" />
+            <div className="absolute inset-0 bg-[#259ba1] rounded-3xl transform -rotate-3 transition-transform hover:-rotate-6 duration-300" />
             <div className="absolute inset-0">
-              <Image
-                src="/api/placeholder/600/500"
-                alt="Healthcare Professional"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-3xl shadow-2xl"
-                priority
-              />
+            <video
+  src= {Videos.hero}
+  className="rounded-3xl shadow-2xl object-cover w-full h-full scale-video"
+  autoPlay
+  loop
+  muted
+  playsInline
+></video>
+
             </div>
           </div>
           
