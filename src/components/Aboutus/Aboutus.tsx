@@ -1,8 +1,8 @@
 "use client";
-
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Check, Users, Accessibility } from "lucide-react";
+
 const AboutUs = () => {
   return (
     <section className="relative min-h-screen w-full overflow-hidden bg-gradient-to-b from-[#f0faf9] to-white py-20">
@@ -76,7 +76,7 @@ const AboutUs = () => {
               description: "Making quality healthcare available to everyone in Tamil Nadu",
               gradient: "from-[#017F7E] to-[#00ADA9]"
             }
-          ].map((value, index) => (
+          ].map((value) => (
             <div key={value.title} className="group">
               <Card className="h-full overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <CardContent className="relative p-6">

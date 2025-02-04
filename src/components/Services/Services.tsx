@@ -7,7 +7,6 @@ import {
   Stethoscope, 
   Activity, 
   PlusCircle, 
-  Baby, 
   Crown, 
   Plus, 
   Apple,
@@ -55,8 +54,9 @@ const Services = () => {
                 </div>
                 
                 <p className="mb-8 text-lg text-gray-700">
-                The "Siru Thuli Scheme" embodies the belief that small efforts can lead to significant impacts. This initiative was born from the struggles of our own elders—fathers and grandfathers—who faced difficulties in meeting their basic healthcare needs due to financial issues. In response, we launched the "Siru Thuli Scheme" to provide free medical services to individuals above the age of 50. This scheme offers comprehensive healthcare, addressing immediate health concerns and promoting dignity among marginalized individuals. The content and efforts are driven by our charity and trust.
-                </p>
+  The ‘Siru Thuli Scheme’ embodies the belief that small efforts can lead to significant impacts. This initiative was born from the struggles of our own elders—fathers and grandfathers—who faced difficulties in meeting their basic healthcare needs due to financial issues. In response, we launched the ‘Siru Thuli Scheme’ to provide free medical services to individuals above the age of 50. This scheme offers comprehensive healthcare, addressing immediate health concerns and promoting dignity among marginalized individuals. The content and efforts are driven by our charity and trust.
+</p>
+
 
                 <div className="grid gap-8 md:grid-cols-2">
                   {/* Eligibility */}
@@ -124,8 +124,8 @@ const Services = () => {
                 </div>
 
                 <p className="mb-8 text-lg text-gray-700">
-                The "Ungal Aarogyam Scheme" was launched after the success and growth of the "Siru Thuli Scheme." During that time, our team recognized the need to support people of all age groups who are unable to afford their healthcare expenses. The primary objective of the Ungal Aarogyam Scheme is to assist individuals living below the poverty line who cannot cover their full medical costs. To address this, we have planned to provide a 50% discount from the subsidised cost of the treatment or services availed. This initiative is driven by the charity and trust’s mission to ensure accessible healthcare for all.
-                </p>
+  The &lsquo;Ungal Aarogyam Scheme&rsquo; was launched after the success and growth of the &quot;Siru Thuli Scheme.&quot; During that time, our team recognized the need to support people of all age groups who are unable to afford their healthcare expenses. The primary objective of the Ungal Aarogyam Scheme is to assist individuals living below the poverty line who cannot cover their full medical costs. To address this, we have planned to provide a 50% discount from the subsidised cost of the treatment or services availed. This initiative is driven by the charity and trust’s mission to ensure accessible healthcare for all.
+</p>
 
                 <div className="grid gap-8 md:grid-cols-2">
                   {/* Eligibility */}
@@ -138,7 +138,8 @@ const Services = () => {
                       </li>
                       <li className="flex items-start">
                         <PlusCircle className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-[#00ADA9]" />
-                        <span>For children, proof of parent's BPL status and medical certificate required</span>
+                        <span>For children, proof of parent&apos;s BPL status and medical certificate required</span>
+
                       </li>
                     </ul>
                   </div>
@@ -165,7 +166,8 @@ const Services = () => {
                         <TestTube className="mr-3 h-6 w-6 text-[#00ADA9]" />
                         <div>
                           <h5 className="font-semibold text-[#017F7E]">Health Tests</h5>
-                          <p className="text-sm text-gray-600">Blood/liver/lipid/cholesterol testing, Women's health checkups</p>
+                          <p className="text-sm text-gray-600">Blood/liver/lipid/cholesterol testing, Women&apos;s health checkups</p>
+
                         </div>
                       </div>
                       <div className="flex items-start rounded-lg bg-white p-4 shadow-sm">

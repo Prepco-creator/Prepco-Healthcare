@@ -47,20 +47,20 @@ const GetInvolved = () => {
               <div className="absolute -bottom-2 left-0 h-1 w-full bg-gradient-to-r from-[#00ADA9] to-[#017F7E]"></div>
             </h1>
             <p className="mx-auto mb-8 max-w-4xl text-lg leading-relaxed text-gray-700">
-              At PREPCO HOPE, we advocate for <span className="font-semibold">preventive healthcare</span> and lifestyle 
+            &apos;PREPCO HOPE&apos; we advocate for <span className="font-semibold">preventive healthcare</span> and lifestyle 
               interventions to reduce the burden of Lifestyle Diseases in Tamil Nadu. We encourage early screening, 
               regular monitoring, and promoting healthy diet and active living to reduce the risk of obesity, 
               hypertension, and diabetes.
             </p>
             <p className="text-xl font-medium text-[#00ADA9]">
-              "சிறு துளி பெரு வெள்ளம்" - Small drops make a mighty ocean
+            &quot;சிறு துளி பெரு வெள்ளம்&quot; - Small drops make a mighty ocean
             </p>
           </div>
         </div>
 
         {/* Ways to Help Grid */}
         <div className="mb-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {ways.map((way, index) => (
+          {ways.map((way) => (
             <div key={way.title} className="group">
               <Card className="h-full overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <CardContent className="relative p-6">
@@ -102,9 +102,10 @@ const GetInvolved = () => {
 
         {/* Final Call to Action */}
         <div className="text-center">
-          <p className="text-lg font-medium text-gray-700">
-            Thank you for being part of the solution. Let's build a healthier tomorrow, today!
-          </p>
+        <p className="text-lg font-medium text-gray-700">
+  Thank you for being part of the solution. Let&apos;s build a healthier tomorrow, today!
+</p>
+
         </div>
       </div>
 

@@ -47,7 +47,7 @@ const HealthCallToAction = () => {
 
         {/* Action Cards */}
         <div className="grid gap-8 md:grid-cols-3">
-          {actions.map((action, index) => (
+          {actions.map((action) => (
             <Card 
               key={action.title}
               className="group relative overflow-hidden backdrop-blur-sm transition-all duration-300 hover:shadow-lg"
