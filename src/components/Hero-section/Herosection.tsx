@@ -13,7 +13,7 @@ const HeroSection = () => {
           {/* Decorative Element */}
           <div className="absolute -top-6 -left-10 w-24 h-24 bg-[#D0F2F3] rounded-full blur-3xl opacity-50" />
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#017F7E] leading-tight relative animate-slideDown">
+          <h1 className="mt-16 sm:mt-0 text-3xl sm:text-4xl lg:text-5xl font-bold text-[#017F7E] leading-tight relative animate-slideDown">
             PREPCO HOPE
           </h1>
 
