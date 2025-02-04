@@ -5,9 +5,9 @@ import React from 'react'
 
 export default function page() {
   return (
-    <>
+    <section className='overflow-x-hidden'>
     <Services/>
     <ServiceLocations/>
-    </>
+    </section>
   )
 }

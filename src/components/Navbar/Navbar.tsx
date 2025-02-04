@@ -5,7 +5,8 @@ import Image from "next/image";
 import { images } from "../../../public/assets";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, X } from "lucide-react";
+
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -31,14 +32,14 @@ const Navbar = () => {
 
       {/* Navbar */}
       <nav
-        className={`transition-[background] shadow-md duration-500 ease-in-out ${isMenuOpen ? "bg-primary text-white" : "bg-white"
+        className={` shadow-md duration-500 ease-in-out ${isMenuOpen ? "bg-white text-white" : "bg-white"
           } rounded-br-3xl rounded-bl-3xl fixed w-full z-20 top-0 start-0 border-none`}
       >
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
           <Link href="/" passHref>
             <div className="flex items-center space-x-3 rtl:space-x-reverse">
               <Image
-                src={isMenuOpen ? images.svgs.logowhite : images.svgs.logo}
+                src={isMenuOpen ? images.svgs.logo : images.svgs.logo}
                 alt="Flowbite Logo"
                 width={133}
                 height={43}
@@ -54,28 +55,32 @@ const Navbar = () => {
               </button>
             </a>
             <button
-              onClick={toggleMenu} // Toggle mobile menu
+              onClick={toggleMenu}
               type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-800 rounded-lg md:hidden hover:bg-gray-300"
               aria-controls="navbar-sticky"
               aria-expanded={isMenuOpen ? "true" : "false"}
             >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className="w-5 h-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
+              <span className="sr-only">Toggle main menu</span>
+              {isMenuOpen ? (
+                <X className="w-5 h-5 text-black" />
+              ) : (
+                <svg
+                  className="w-5 h-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 17 14"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M1 1h15M1 7h15M1 13h15"
+                  />
+                </svg>
+              )}
             </button>
           </div>
           <div
