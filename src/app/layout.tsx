@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
+import CTASection from "@/components/CTASection/CTASection";
 
 
 export const metadata: Metadata = {
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className="font-poppins " >
        <Navbar/>
         {children}
+        <CTASection/>
         <ScrollToTop />
       </body>
     </html>

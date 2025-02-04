@@ -1,4 +1,5 @@
 import logo from './svg/Logo.svg';
+import logowhite from './svg/LogoWhite.svg';
 
 import dental from './jpg/dental.jpg';
 import img2 from './jpg/img2.jpg';
@@ -18,6 +19,7 @@ import img15 from './jpg/img15.jpg';
 
 const svgs = {
     logo,
+    logowhite
 };
 
 const jpgs = {
