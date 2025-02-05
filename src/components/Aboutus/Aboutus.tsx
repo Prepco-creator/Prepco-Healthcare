@@ -30,9 +30,8 @@ const AboutUs = () => {
               community a reality.
             </p>
           </div>
-        </div>
- {/* Video Section */}
- <div className="relative mb-16 flex justify-center">
+          {/* Video Section */}
+ <div className="relative mb-16 flex justify-center mt-8">
           <div className="w-full max-w-4xl overflow-hidden rounded-lg shadow-lg">
             <video className="w-full h-auto rounded-lg" controls>
               <source src="/path-to-your-video.mp4" type="video/mp4" />
@@ -40,6 +39,8 @@ const AboutUs = () => {
             </video>
           </div>
         </div>
+        </div>
+ 
         {/* Vision Card */}
         <div className="relative mb-16">
           <div className="absolute inset-0 transform">
