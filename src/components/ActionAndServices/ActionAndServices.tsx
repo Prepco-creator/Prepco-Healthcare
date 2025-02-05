@@ -1,35 +1,35 @@
 "use client";
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
-import { HeartHandshake, Wallet, Users, Move, Stethoscope, Heart, PlusCircle } from 'lucide-react';
+import {  Stethoscope, Heart } from 'lucide-react';
 
 const ActionAndServices = () => {
-  const actions = [
-    {
-      title: 'Get Involved',
-      icon: HeartHandshake,
-      description: 'Join our community of healthcare advocates',
-      buttonText: 'Join Now'
-    },
-    {
-      title: 'Donate',
-      icon: Wallet,
-      description: 'Support our mission with your contribution',
-      buttonText: 'Donate'
-    },
-    {
-      title: 'Volunteer',
-      icon: Users,
-      description: 'Share your time and skills to help others',
-      buttonText: 'Volunteer'
-    },
-    {
-      title: 'Join the Movement',
-      icon: Move,
-      description: 'Be part of the healthcare revolution',
-      buttonText: 'Join Movement'
-    }
-  ];
+//   const actions = [
+//     {
+//       title: 'Get Involved',
+//       icon: HeartHandshake,
+//       description: 'Join our community of healthcare advocates',
+//       buttonText: 'Join Now'
+//     },
+//     {
+//       title: 'Donate',
+//       icon: Wallet,
+//       description: 'Support our mission with your contribution',
+//       buttonText: 'Donate'
+//     },
+//     {
+//       title: 'Volunteer',
+//       icon: Users,
+//       description: 'Share your time and skills to help others',
+//       buttonText: 'Volunteer'
+//     },
+//     {
+//       title: 'Join the Movement',
+//       icon: Move,
+//       description: 'Be part of the healthcare revolution',
+//       buttonText: 'Join Movement'
+//     }
+//   ];
 
   const services = [
     {
