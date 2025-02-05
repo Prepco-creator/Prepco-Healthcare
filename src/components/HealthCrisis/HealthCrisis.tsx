@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { Card, CardHeader, CardContent } from '@/components/ui/card';
-import { Activity, Heart, Cigarette, Wine, Scale, Footprints, HeartPulse ,Dumbbell} from 'lucide-react';
+import { Activity, Heart, Cigarette, Wine, Scale, Footprints, HeartPulse, Dumbbell } from 'lucide-react';
 
 const HealthCrisis = () => {
   const diseases = [
@@ -20,11 +20,10 @@ const HealthCrisis = () => {
       showPercentage: true
     },
     {
-        name: 'Cardiac Diseases',
-        percentage: '',
-        description: 'The leading cause of death in the region',
-        icon: Heart,
-        showPercentage: false
+      name: 'Cardiac Diseases',
+      description: 'The leading cause of death in the region',
+      icon: Heart,
+      showPercentage: false
     }
   ];
 
@@ -42,16 +41,16 @@ const HealthCrisis = () => {
       icon: Wine
     },
     {
-        name: 'Obesity',
-        percentage: 11.4,
-        description: 'Of individuals',
-        icon: Scale
+      name: 'Obesity',
+      percentage: 11.4,
+      description: 'Of individuals',
+      icon: Scale
     },
     {
-        name: 'Overweight',
-        percentage: 28.5,
-        description: 'Of Population',
-        icon: Dumbbell
+      name: 'Overweight',
+      percentage: 28.5,
+      description: 'Of Population',
+      icon: Dumbbell
     },
     {
       name: 'Physical Inactivity',
@@ -74,10 +73,10 @@ const HealthCrisis = () => {
         {/* Header */}
         <div className="mb-12 text-center">
           <h1 className="mb-4 text-4xl font-bold text-[#017F7E] sm:text-5xl">
-          Rising Lifestyle Diseases in Tamil Nadu 
+            Rising Lifestyle Diseases in Tamil Nadu
           </h1>
           <h1 className="mb-4 text-4xl font-bold text-[#017F7E] sm:text-5xl">
-          The Crisis at Hand 
+            The Crisis at Hand
           </h1>
           <div className="mx-auto mb-8 max-w-3xl">
             <div className="mb-6 rounded-xl bg-red-50 p-4 text-red-700">
