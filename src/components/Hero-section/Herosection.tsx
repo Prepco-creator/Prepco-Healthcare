@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { ArrowRight, Phone } from "lucide-react";
-import { Videos } from "../../../public/assets";
+// import { Videos } from "../../../public/assets";
 import Link from "next/link";
 import VideoPlayer from "../Videoplayer/Videoplayer";
 

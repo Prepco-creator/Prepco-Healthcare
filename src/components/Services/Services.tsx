@@ -13,8 +13,8 @@ import {
   TestTube,
   Activity as Therapy,
   Users,
-  Home,
-  HelpCircle
+  // Home,
+  // HelpCircle
 } from "lucide-react";
 
 const Services = () => {

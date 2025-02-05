@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Play, Pause } from 'lucide-react';
+import { Play } from 'lucide-react';
 
 const VideoPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
