@@ -2,6 +2,7 @@
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Check, Users, Accessibility } from "lucide-react";
+import GridGallery from '../GridGallery/GridGallery';
 
 const AboutUs = () => {
   return (
@@ -57,7 +58,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-
+          <GridGallery/>
         {/* Values Section */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {[

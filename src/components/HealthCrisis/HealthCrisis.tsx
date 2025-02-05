@@ -9,20 +9,23 @@ const HealthCrisis = () => {
       name: 'Diabetes',
       percentage: 17.6,
       description: 'Highest prevalence in India',
-      icon: Activity
+      icon: Activity,
+      showPercentage: true
     },
     {
       name: 'Hypertension',
       percentage: 33.9,
       description: 'Leading to heart disease and stroke',
-      icon: HeartPulse
+      icon: HeartPulse,
+      showPercentage: true
     },
     {
         name: 'Cardiac Diseases',
         percentage: '',
         description: 'The leading cause of death in the region',
-        icon: Heart
-      }
+        icon: Heart,
+        showPercentage: false
+    }
   ];
 
   const riskFactors = [
@@ -38,19 +41,18 @@ const HealthCrisis = () => {
       description: 'Of individuals',
       icon: Wine
     },
-    
     {
         name: 'Obesity',
         percentage: 11.4,
         description: 'Of individuals',
         icon: Scale
-      },
-      {
+    },
+    {
         name: 'Overweight',
         percentage: 28.5,
         description: 'Of Population',
         icon: Dumbbell
-      },
+    },
     {
       name: 'Physical Inactivity',
       percentage: 28.5,
@@ -73,11 +75,9 @@ const HealthCrisis = () => {
         <div className="mb-12 text-center">
           <h1 className="mb-4 text-4xl font-bold text-[#017F7E] sm:text-5xl">
           Rising Lifestyle Diseases in Tamil Nadu 
-           
           </h1>
           <h1 className="mb-4 text-4xl font-bold text-[#017F7E] sm:text-5xl">
           The Crisis at Hand 
-           
           </h1>
           <div className="mx-auto mb-8 max-w-3xl">
             <div className="mb-6 rounded-xl bg-red-50 p-4 text-red-700">
@@ -86,10 +86,8 @@ const HealthCrisis = () => {
               </p>
             </div>
           </div>
-         
         </div>
 
-         
         {/* Main Stats Grid */}
         <div className="mb-12 grid gap-6 md:grid-cols-2">
           {/* Prevalent Diseases */}
@@ -109,7 +107,7 @@ const HealthCrisis = () => {
                         {disease.name}
                       </h3>
                       <p className="text-gray-600">
-                        {disease.percentage}% - {disease.description}
+                        {disease.showPercentage ? `${disease.percentage}% - ` : ''}{disease.description}
                       </p>
                     </div>
                   </div>
