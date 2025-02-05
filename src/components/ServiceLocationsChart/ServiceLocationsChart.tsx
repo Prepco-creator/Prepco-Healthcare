@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+// import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 const ServiceLocations = () => {
   const locationData = [
@@ -35,7 +35,7 @@ const ServiceLocations = () => {
           </div>
 
           {/* Chart Container */}
-          <div className="h-[400px] w-full">
+          {/* <div className="h-[400px] w-full">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={locationData}>
                 <CartesianGrid strokeDasharray="3 3" />
@@ -66,7 +66,7 @@ const ServiceLocations = () => {
                 />
               </BarChart>
             </ResponsiveContainer>
-          </div>
+          </div> */}
         </div>
 
         {/* Location Statistics Cards */}

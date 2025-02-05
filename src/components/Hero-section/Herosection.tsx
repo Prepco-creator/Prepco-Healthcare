@@ -6,14 +6,14 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <div className="w-full min-h-screen bg-gradient-to-br from-[#E8FDFD] via-[#D9FCFB] to-[#C0F8F7] flex items-center py-10 sm:py-14 md:py-20">
+    <div className="w-full min-h-screen bg-gradient-to-br from-[#E8FDFD] via-[#D9FCFB] to-[#C0F8F7] flex items-center py-16 sm:py-14 md:py-20">
       <div className="w-11/12 mx-auto px-6 sm:px-8 lg:px-10 flex flex-col lg:flex-row items-center justify-between gap-14 lg:gap-16">
         {/* Left Content */}
         <div className="flex-1 space-y-6 sm:space-y-8 text-center lg:text-left relative">
           {/* Decorative Element */}
           <div className="absolute -top-6 -left-10 w-24 h-24 bg-[#D0F2F3] rounded-full blur-3xl opacity-50" />
 
-          <h1 className="mt-16 sm:mt-0 text-3xl sm:text-4xl lg:text-5xl font-bold text-[#017F7E] leading-tight relative animate-slideDown">
+          <h1 className="mt-6 sm:mt-0 text-3xl sm:text-4xl lg:text-5xl font-bold text-[#017F7E] leading-tight relative animate-slideDown">
             PREPCO HOPE
           </h1>
 
@@ -57,7 +57,7 @@ const HeroSection = () => {
             {/* Video Container */}
             <div className="absolute inset-0 bg-[#E3FFFE] rounded-3xl transform rotate-2 transition-transform hover:rotate-3 duration-300 shadow-lg overflow-hidden">
               <video
-                src={Videos.hero}
+                src={Videos.aboutUsEnglish}
                 className="rounded-3xl object-cover w-full h-full transition-all duration-500 hover:scale-105"
                 autoPlay
                 loop

@@ -75,9 +75,14 @@ const ContactTerms = () => {
           
           <div className="grid gap-6 md:grid-cols-3">
             {[
-              { icon: Phone, title: "Phone", content: "[Insert Phone Number]" },
-              { icon: Mail, title: "Email", content: "[Insert Email Address]" },
-              { icon: MapPin, title: "Address", content: "[Insert Address]" }
+              { icon: Phone, title: "Phone", content: "+91 9884555335" },
+              { icon: Mail, title: "Email", content: "Info@prepcohope.org" },
+              { 
+                icon: MapPin, 
+                title: "Address", 
+                content: "Anbalayaa Complex, 2nd Floor, #50/22, Thirumangalam Rd, Kambar Colony, Anna Nagar, Chennai - 600040." 
+              }
+              
             ].map((item, index) => (
               <Card key={index} className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <div className="absolute -right-16 -top-16 h-32 w-32 rounded-full bg-gradient-to-br from-[#00ADA9] to-[#017F7E] opacity-10 transition-all duration-300 group-hover:scale-150"></div>

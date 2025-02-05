@@ -44,18 +44,13 @@ const ActionAndServices = () => {
       description: 'Focused on preventive healthcare and wellness programs for communities, promoting healthy lifestyle practices.',
       features: ['Wellness programs', 'Health education', 'Preventive care']
     },
-    {
-      title: 'Additional Services',
-      icon: PlusCircle,
-      description: 'Extended support services designed to provide comprehensive healthcare solutions for various needs.',
-      features: ['Emergency care', 'Mental health support', 'Rehabilitation services']
-    }
+   
   ];
 
   return (
     <>
       {/* Call to Action Section */}
-      <section className="relative w-full bg-gradient-to-b from-[#f0faf9] to-white py-16">
+      {/* <section className="relative w-full bg-gradient-to-b from-[#f0faf9] to-white py-16">
         <div className="absolute inset-0">
           <div className="absolute left-0 top-0 h-64 w-64 animate-blob rounded-full bg-[#e0f7f6] opacity-70 mix-blend-multiply blur-xl"></div>
           <div className="absolute right-0 top-0 h-72 w-72 animate-blob animation-delay-2000 rounded-full bg-[#c0f8f7] opacity-70 mix-blend-multiply blur-xl"></div>
@@ -101,7 +96,7 @@ const ActionAndServices = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Featured Services Section */}
       <section className="relative w-full bg-gradient-to-t from-[#f0faf9] to-white py-16">
@@ -119,7 +114,7 @@ const ActionAndServices = () => {
             </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2">
             {services.map((service) => (
               <Card 
                 key={service.title}
@@ -152,7 +147,7 @@ const ActionAndServices = () => {
                       ))}
                     </ul>
                     
-                    <button className="w-full rounded-lg border-2 border-[#00ADA9] px-6 py-3 text-[#017F7E] transition-all duration-300 hover:bg-[#00ADA9] hover:text-white">
+                    <button  className="w-full rounded-lg border-2 border-[#00ADA9] px-6 py-3 text-[#017F7E] transition-all duration-300 hover:bg-[#00ADA9] hover:text-white">
                       Learn More
                     </button>
                   </div>

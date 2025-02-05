@@ -42,7 +42,7 @@ const Services = () => {
         </div>
 
         {/* Siru Thuli Scheme */}
-        <div className="mb-16">
+        <div className="mb-16" id='siru'>
           <Card className="group overflow-hidden">
             <CardContent className="relative p-8">
               <div className="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-gradient-to-br from-[#00ADA9] to-[#017F7E] opacity-10 transition-transform duration-500 group-hover:scale-150"></div>

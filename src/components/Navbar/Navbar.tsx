@@ -48,12 +48,12 @@ const Navbar = () => {
             </div>
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <a href="#">
+            {/* <a href="#">
               <button className="group mt-2 sm:mt-0 w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-[#018380] text-white rounded-xl hover:bg-[#00ADA9] transition-all duration-300 shadow-double-inset hover:shadow-2xl transform hover:-translate-y-1 flex items-center justify-center gap-2 text-sm sm:text-base">
                 Book Appointment
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
-            </a>
+            </a> */}
             <button
               onClick={toggleMenu}
               type="button"
