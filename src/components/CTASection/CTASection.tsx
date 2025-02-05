@@ -30,7 +30,7 @@ const CTASection = () => {
             {/* Download App Button */}
             <button className="group flex items-center gap-3 bg-white text-[#018380] px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95">
               <Download className="w-5 h-5" />
-              <span className="font-semibold">Download App</span>
+              <span className="font-semibold">APP UNDER TESTING </span>
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
 

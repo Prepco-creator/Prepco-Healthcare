@@ -28,7 +28,7 @@ const ContactTerms = () => {
     {
       title: "2. Eligibility for Services",
       content: `• SIRU THULI SCHEME: This scheme is available to individuals who meet the eligibility criteria under the Government's Below Poverty Line (BPL) classification. Eligibility verification will require the submission of valid documents such as a ration card and income certificate.
-• UNGAL AAROGYAM SCHEME: This scheme is available to individuals of any age under the BPL criteria, with appropriate documentation proving eligibility. Children require parental BPL proof and a medical certificate.`
+• Nalame Valam SCHEME: This scheme is available to individuals of any age under the BPL criteria, with appropriate documentation proving eligibility. Children require parental BPL proof and a medical certificate.`
     },
     {
       title: "3. Service Access and Membership",
@@ -39,7 +39,7 @@ const ContactTerms = () => {
       title: "4. Services Provided",
       content: `PREPCO HOPE provides a range of free and subsidized healthcare services, including consultations, screenings, treatments, and diagnostics. The specific services available depend on the scheme under which the individual is enrolled:
 • SIRU THULI SCHEME: Free services include diabetic care, blood pressure management, cardiac investigations, and master health checkups.
-• UNGAL AAROGYAM SCHEME: Subsidized services include dental care, blood/liver tests, women's health checkups, physiotherapy sessions, and more.`
+• Nalame Valam SCHEME: Subsidized services include dental care, blood/liver tests, women's health checkups, physiotherapy sessions, and more.`
     },
     {
       title: "5. Donations and Financial Contributions",

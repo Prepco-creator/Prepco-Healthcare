@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import { ArrowRight, Phone } from "lucide-react";
 import { Videos } from "../../../public/assets";
 import Link from "next/link";
+import VideoPlayer from "../Videoplayer/Videoplayer";
 
 
 const HeroSection = () => {
@@ -16,6 +18,9 @@ const HeroSection = () => {
           <h1 className="mt-6 sm:mt-0 text-3xl sm:text-4xl lg:text-5xl font-bold text-[#017F7E] leading-tight relative animate-slideDown">
             PREPCO HOPE
           </h1>
+          <h1 className="mt-2 sm:mt-0 text-lg sm:text-xl lg:text-3xl font-extrabold leading-snug relative animate-slideDown bg-gradient-to-r from-teal-300 to-teal-500 text-white rounded-2xl px-8 py-3 shadow-lg shadow-teal-300/50">
+  Small Steps, Big Changes
+</h1>
 
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#017F7E] leading-tight relative animate-slideUp">
             Fighting the Rise of{" "}
@@ -55,15 +60,8 @@ const HeroSection = () => {
             <div className="absolute inset-0 bg-[#E3FFFE] rounded-3xl transform rotate-3 transition-transform hover:rotate-6 duration-300" />
             <div className="absolute inset-0 bg-[#259ba1] rounded-3xl transform -rotate-3 transition-transform hover:-rotate-6 duration-300" />
             {/* Video Container */}
-            <div className="absolute inset-0 bg-[#E3FFFE] rounded-3xl transform rotate-2 transition-transform hover:rotate-3 duration-300 shadow-lg overflow-hidden">
-              <video
-                src={Videos.aboutUsEnglish}
-                className="rounded-3xl object-cover w-full h-full transition-all duration-500 hover:scale-105"
-                autoPlay
-                loop
-                muted
-                playsInline
-              ></video>
+            <div className="absolute inset-0 bg-[#E3FFFE] rounded-3xl transform rotate-2 transition-transform hover:rotate-3 duration-300 shadow-lg overflow-hidden flex items-center justify-center">
+            <VideoPlayer/>
             </div>
           </div>
 

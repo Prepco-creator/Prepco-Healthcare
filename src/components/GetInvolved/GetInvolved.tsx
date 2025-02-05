@@ -53,7 +53,7 @@ const GetInvolved = () => {
               hypertension, and diabetes.
             </p>
             <p className="text-xl font-medium text-[#00ADA9]">
-            &quot;சிறு துளி பெரு வெள்ளம்&quot; - Small drops make a mighty ocean
+           <span className='font-extrabold text-[#238785]'> &quot;சிறு துளி பெரு வெள்ளம்&quot;</span> - Small drops make a mighty ocean
             </p>
           </div>
         </div>

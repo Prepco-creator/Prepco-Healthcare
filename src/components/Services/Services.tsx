@@ -50,7 +50,7 @@ const Services = () => {
               <div className="relative">
                 <div className="mb-8 flex items-center">
                   <Crown className="mr-4 h-8 w-8 text-[#00ADA9]" />
-                  <h3 className="text-3xl font-bold text-[#017F7E]">SIRU THULI SCHEME</h3>
+                  <h3 className="text-3xl font-bold text-[#017F7E]">SIRU THULI SCHEME - fully exempted</h3>
                 </div>
                 
                 <p className="mb-8 text-lg text-gray-700">
@@ -111,7 +111,7 @@ const Services = () => {
           </Card>
         </div>
 
-        {/* Ungal Aarogyam Scheme */}
+        {/* Nalame Valam Scheme */}
         <div className="mb-16">
           <Card className="group overflow-hidden">
             <CardContent className="relative p-8">
@@ -120,11 +120,11 @@ const Services = () => {
               <div className="relative">
                 <div className="mb-8 flex items-center">
                   <Users className="mr-4 h-8 w-8 text-[#00ADA9]" />
-                  <h3 className="text-3xl font-bold text-[#017F7E]">UNGAL AAROGYAM SCHEME</h3>
+                  <h3 className="text-3xl font-bold text-[#017F7E]">Nalame Valam SCHEME </h3>
                 </div>
 
                 <p className="mb-8 text-lg text-gray-700">
-  The &lsquo;Ungal Aarogyam Scheme&rsquo; was launched after the success and growth of the &quot;Siru Thuli Scheme.&quot; During that time, our team recognized the need to support people of all age groups who are unable to afford their healthcare expenses. The primary objective of the Ungal Aarogyam Scheme is to assist individuals living below the poverty line who cannot cover their full medical costs. To address this, we have planned to provide a 50% discount from the subsidised cost of the treatment or services availed. This initiative is driven by the charity and trust’s mission to ensure accessible healthcare for all.
+  The &lsquo;Nalame Valam Scheme&rsquo; was launched after the success and growth of the &quot;Siru Thuli Scheme.&quot; During that time, our team recognized the need to support people of all age groups who are unable to afford their healthcare expenses. The primary objective of the Nalame Valam Scheme is to assist individuals living below the poverty line who cannot cover their full medical costs. To address this, we have planned to provide a 50% discount from the subsidised cost of the treatment or services availed. This initiative is driven by the charity and trust’s mission to ensure accessible healthcare for all.
 </p>
 
                 <div className="grid gap-8 md:grid-cols-2">
@@ -146,7 +146,7 @@ const Services = () => {
 
                   {/* Services */}
                   <div className="space-y-4 rounded-xl bg-[#f0faf9] p-6">
-                    <h4 className="text-xl font-semibold text-[#017F7E]">Services Offered (50% off)</h4>
+                    <h4 className="text-xl font-semibold text-[#017F7E]">Services Offered (50% off On subsidized rates)</h4>
                     <div className="grid gap-4">
                       <div className="flex items-start rounded-lg bg-white p-4 shadow-sm">
                         <Plus className="mr-3 h-6 w-6 text-[#00ADA9]" />
@@ -186,7 +186,7 @@ const Services = () => {
         </div>
 
         {/* Additional Services */}
-        <div className="grid gap-6 sm:grid-cols-3">
+        {/* <div className="grid gap-6 sm:grid-cols-3">
           <Card className="group overflow-hidden transition-all duration-300 hover:scale-105">
             <CardContent className="relative p-6">
               <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-[#e0f7f6] transition-transform duration-500 group-hover:scale-150"></div>
@@ -225,7 +225,7 @@ const Services = () => {
               </div>
             </CardContent>
           </Card>
-        </div>
+        </div> */}
       </div>
       <style jsx>{`
         @keyframes blob {

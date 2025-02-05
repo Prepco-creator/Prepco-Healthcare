@@ -1,8 +1,8 @@
 "use client";
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
-import {  Stethoscope, Heart } from 'lucide-react';
-
+import {  Stethoscope, Heart, Subtitles } from 'lucide-react';
+import Link from 'next/link';
 const ActionAndServices = () => {
 //   const actions = [
 //     {
@@ -34,12 +34,14 @@ const ActionAndServices = () => {
   const services = [
     {
       title: 'Siru Thuli Scheme',
+      subtitle: "fully exempted",
       icon: Stethoscope,
       description: 'Comprehensive healthcare support for underprivileged families, providing essential medical services and preventive care.',
       features: ['Regular health check-ups', 'Medication support', 'Specialist consultations']
     },
     {
-      title: 'Ungal Aarogyam Scheme',
+      title: 'Nalame Valam Scheme',
+      subtitle : '50% off On subsidized rates',
       icon: Heart,
       description: 'Focused on preventive healthcare and wellness programs for communities, promoting healthy lifestyle practices.',
       features: ['Wellness programs', 'Health education', 'Preventive care']
@@ -133,7 +135,9 @@ const ActionAndServices = () => {
                     <h3 className="text-center text-2xl font-semibold text-[#017F7E]">
                       {service.title}
                     </h3>
-                    
+                    <h3 className="text-center text-lg font-semibold text-[#017F7E]">
+                      {service.subtitle}
+                    </h3>
                     <p className="text-center text-gray-600">
                       {service.description}
                     </p>
@@ -146,10 +150,11 @@ const ActionAndServices = () => {
                         </li>
                       ))}
                     </ul>
-                    
-                    <button  className="w-full rounded-lg border-2 border-[#00ADA9] px-6 py-3 text-[#017F7E] transition-all duration-300 hover:bg-[#00ADA9] hover:text-white">
+                    <Link href="/services">
+                    <button  className="w-full mt-8 rounded-lg border-2 border-[#00ADA9] px-6 py-3 text-[#017F7E] transition-all duration-300 hover:bg-[#00ADA9] hover:text-white">
                       Learn More
                     </button>
+                    </Link>
                   </div>
                 </CardContent>
               </Card>
