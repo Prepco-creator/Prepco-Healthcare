@@ -1,11 +1,13 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import NumberCTAPopup from '../NumberCTAPopup/NumberCTAPopup';
 
 const JoinUsSection = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
   return (
     <section className="relative min-h-screen w-full overflow-hidden bg-gradient-to-b from-[#f0faf9] to-white py-20">
       {/* Animated background elements */}
@@ -52,7 +54,7 @@ const JoinUsSection = () => {
             </Link>
 
             {/* Volunteer card */}
-            <Link href="#volunteer" className="group/card">
+            <div onClick={() => setIsPopupOpen(true)} className="group/card cursor-pointer">
               <Card className="overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <CardContent className="relative p-6">
                   <div className="absolute -right-16 -top-16 h-32 w-32 rounded-full bg-[#c0f8f7] transition-all duration-300 group-hover/card:scale-150"></div>
@@ -65,7 +67,8 @@ const JoinUsSection = () => {
                   </div>
                 </CardContent>
               </Card>
-            </Link>
+            </div>
+            <NumberCTAPopup isOpen={isPopupOpen} setIsOpen={setIsPopupOpen} />
           </div>
 
           {/* Learn more section */}
