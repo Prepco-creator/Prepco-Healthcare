@@ -3,6 +3,7 @@ import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Check, Users, Accessibility } from "lucide-react";
 import GridGallery from '../GridGallery/GridGallery';
+import ResponsiveYouTube from '../ResponsiveYoutube/ResponsiveYoutube';
 
 const AboutUs = () => {
   return (
@@ -23,32 +24,29 @@ const AboutUs = () => {
               <div className="absolute -bottom-2 left-0 h-1 w-full bg-gradient-to-r from-[#00ADA9] to-[#017F7E]"></div>
             </h2>
             <p className="mx-auto max-w-4xl text-lg leading-relaxed text-gray-700">
-              At PREPCO HOPE, we believe that quality healthcare is a right, not a privilege. With rising rates of Lifestyle 
-              Diseases in Tamil Nadu, we are committed to ensuring that healthcare is accessible to all—especially those who 
-              face financial barriers. Our mission is to provide free and subsidized healthcare services, including checkups, 
-              diagnosis, and treatments, for individuals in need. We believe that even small acts of care can lead to 
-              significant change. By impacting one person each day, we are transforming lives and making a healthier 
+              At PREPCO HOPE, we believe that quality healthcare is a right, not a privilege. With rising rates of Lifestyle
+              Diseases in Tamil Nadu, we are committed to ensuring that healthcare is accessible to all—especially those who
+              face financial barriers. Our mission is to provide free and subsidized healthcare services, including checkups,
+              diagnosis, and treatments, for individuals in need. We believe that even small acts of care can lead to
+              significant change. By impacting one person each day, we are transforming lives and making a healthier
               community a reality.
             </p>
           </div>
           {/* Video Section */}
- <div className="relative mb-16 flex justify-center mt-8">
-          <div className="w-full max-w-4xl overflow-hidden rounded-lg shadow-lg">
-            <video className="w-full h-auto rounded-lg" controls>
-              <source src="/path-to-your-video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+          <div className="relative mb-16 flex justify-center mt-8">
+            <div className="w-full overflow-hidden rounded-lg shadow-lg">
+              <ResponsiveYouTube videoURL='https://www.youtube.com/embed/FNNnlUTw0Sg' />
+            </div>
           </div>
         </div>
-        </div>
- 
+
         {/* Vision Card */}
         <div className="relative mb-16">
           <div className="absolute inset-0 transform">
             <div className="h-full w-full rotate-3 rounded-3xl bg-[#00ADA9] opacity-10"></div>
             <div className="absolute inset-0 -rotate-3 rounded-3xl bg-[#00ADA9]"></div>
           </div>
-          
+
           <div className="relative z-10 p-8 sm:p-12">
             <div className="text-center">
               <h2 className="mb-6 text-4xl font-bold text-white sm:text-5xl">Our Vision</h2>
@@ -58,7 +56,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-          <GridGallery/>
+        <GridGallery />
         {/* Values Section */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {[
@@ -124,7 +122,7 @@ const AboutUs = () => {
           animation-delay: 4s;
         }
       `}</style>
-      
+
     </section>
   );
 };

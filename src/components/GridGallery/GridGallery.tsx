@@ -10,14 +10,14 @@ interface GalleryImage {
 }
 
 const images: GalleryImage[] = [
-  { id: 1, src: "/api/placeholder/400/300", alt: "Gallery Image 1", title: "Water Conservation" },
-  { id: 2, src: "/api/placeholder/400/300", alt: "Gallery Image 2", title: "Community Support" },
-  { id: 3, src: "/api/placeholder/400/300", alt: "Gallery Image 3", title: "Healthcare Services" },
-  { id: 4, src: "/api/placeholder/400/300", alt: "Gallery Image 4", title: "Medical Camps" },
-  { id: 5, src: "/api/placeholder/400/300", alt: "Gallery Image 5", title: "Rural Healthcare" },
-  { id: 6, src: "/api/placeholder/400/300", alt: "Gallery Image 6", title: "Awareness Programs" },
-  { id: 7, src: "/api/placeholder/400/300", alt: "Gallery Image 7", title: "Community Events" },
-  { id: 8, src: "/api/placeholder/400/300", alt: "Gallery Image 8", title: "Health Education" },
+  { id: 1, src: "/Images/jpg/doctor-pulse-village-woman.jpg", alt: "doctor-pulse-village-woman", title: "Elderly Healthcare" },
+  { id: 2, src: "/Images/jpg/doctor-checking-bp-girl.jpg", alt: "Gallery Image 2", title: "Community Support" },
+  { id: 3, src: "/Images/jpg/doctor-testing-eye-2.jpg", alt: "Gallery Image 3", title: "Healthcare Services" },
+  { id: 4, src: "/Images/jpg/medical-camp.jpg", alt: "Gallery Image 4", title: "Medical Camps" },
+  { id: 5, src: "/Images/jpg/doctor-checking-village-man-2.jpg", alt: "Gallery Image 5", title: "Rural Healthcare" },
+  { id: 6, src: "/Images/jpg/group-disccussion-street-volunteers.jpg", alt: "Gallery Image 6", title: "Awareness Programs" },
+  { id: 7, src: "/Images/jpg/medical-camp-2.jpg", alt: "Gallery Image 7", title: "Community Events" },
+  { id: 8, src: "/Images/jpg/doctor-prescription-old-lady.jpg", alt: "Gallery Image 8", title: "Health Education" },
 ];
 
 const GridGallery: React.FC = () => {
@@ -28,7 +28,7 @@ const GridGallery: React.FC = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentPage((prev) => (prev + 1) % totalPages);
-    }, 5000);
+    }, 15000);
 
     return () => clearInterval(timer);
   }, [totalPages]);
@@ -107,11 +107,10 @@ const GridGallery: React.FC = () => {
               <button
                 key={index}
                 onClick={() => setCurrentPage(index)}
-                className={`h-2 w-2 rounded-full transition-all duration-300 ${
-                  currentPage === index
-                    ? "bg-[#017F7E] w-6"
-                    : "bg-[#017F7E]/30"
-                }`}
+                className={`h-2 w-2 rounded-full transition-all duration-300 ${currentPage === index
+                  ? "bg-[#017F7E] w-6"
+                  : "bg-[#017F7E]/30"
+                  }`}
               />
             ))}
           </div>

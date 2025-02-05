@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Play } from 'lucide-react';
+import Image from 'next/image';
 
 const VideoPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -33,18 +34,19 @@ const VideoPlayer = () => {
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/02CcY9Z_t_8?si=qvBL6oPoKMw9xmGR&autoplay=1&rel=0&start=2"  // Start from 0.2s
+            src="https://www.youtube.com/embed/02CcY9Z_t_8?si=qvBL6oPoKMw9xmGR&autoplay=1&rel=0&start=2&modestbranding=1&autoplay=1&controls=1&loop=1"  // Start from 0.2s
             title="PREPCO HOPE Video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             className="w-full h-full object-cover"
             frameBorder="0"
           />
         ) : (
-          <div
-            className="w-full h-full bg-cover bg-center"
-            style={{
-              backgroundImage: `url('/api/placeholder/800/450')` // Thumbnail
-            }}
+          <Image
+            width={1139}
+            height={641}
+            className="w-full h-full object-cover object-center"
+            src="https://i.ytimg.com/vi_webp/02CcY9Z_t_8/maxresdefault.webp"
+            alt='yt-video-thumbnail'
           />
         )}
       </div>

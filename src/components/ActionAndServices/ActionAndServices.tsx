@@ -1,35 +1,35 @@
 "use client";
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
-import {  Stethoscope, Heart } from 'lucide-react';
+import { Stethoscope, Heart } from 'lucide-react';
 import Link from 'next/link';
 const ActionAndServices = () => {
-//   const actions = [
-//     {
-//       title: 'Get Involved',
-//       icon: HeartHandshake,
-//       description: 'Join our community of healthcare advocates',
-//       buttonText: 'Join Now'
-//     },
-//     {
-//       title: 'Donate',
-//       icon: Wallet,
-//       description: 'Support our mission with your contribution',
-//       buttonText: 'Donate'
-//     },
-//     {
-//       title: 'Volunteer',
-//       icon: Users,
-//       description: 'Share your time and skills to help others',
-//       buttonText: 'Volunteer'
-//     },
-//     {
-//       title: 'Join the Movement',
-//       icon: Move,
-//       description: 'Be part of the healthcare revolution',
-//       buttonText: 'Join Movement'
-//     }
-//   ];
+  //   const actions = [
+  //     {
+  //       title: 'Get Involved',
+  //       icon: HeartHandshake,
+  //       description: 'Join our community of healthcare advocates',
+  //       buttonText: 'Join Now'
+  //     },
+  //     {
+  //       title: 'Donate',
+  //       icon: Wallet,
+  //       description: 'Support our mission with your contribution',
+  //       buttonText: 'Donate'
+  //     },
+  //     {
+  //       title: 'Volunteer',
+  //       icon: Users,
+  //       description: 'Share your time and skills to help others',
+  //       buttonText: 'Volunteer'
+  //     },
+  //     {
+  //       title: 'Join the Movement',
+  //       icon: Move,
+  //       description: 'Be part of the healthcare revolution',
+  //       buttonText: 'Join Movement'
+  //     }
+  //   ];
 
   const services = [
     {
@@ -41,12 +41,12 @@ const ActionAndServices = () => {
     },
     {
       title: 'Nalame Valam Scheme',
-      subtitle : '50% off On subsidized rates',
+      subtitle: '50% off On subsidized rates',
       icon: Heart,
       description: 'Focused on preventive healthcare and wellness programs for communities, promoting healthy lifestyle practices.',
       features: ['Wellness programs', 'Health education', 'Preventive care']
     },
-   
+
   ];
 
   return (
@@ -101,7 +101,7 @@ const ActionAndServices = () => {
       </section> */}
 
       {/* Featured Services Section */}
-      <section className="relative w-full bg-gradient-to-t from-[#f0faf9] to-white py-16">
+      <section className="relative overflow-hidden w-full bg-gradient-to-t from-[#f0faf9] to-white py-16">
         <div className="absolute inset-0">
           <div className="absolute bottom-0 left-1/2 h-72 w-72 animate-blob animation-delay-4000 rounded-full bg-[#d5f5f4] opacity-70 mix-blend-multiply blur-xl"></div>
         </div>
@@ -118,20 +118,20 @@ const ActionAndServices = () => {
 
           <div className="grid gap-8 md:grid-cols-2">
             {services.map((service) => (
-              <Card 
+              <Card
                 key={service.title}
                 className="group overflow-hidden backdrop-blur-sm transition-all duration-300 hover:shadow-xl"
               >
                 <CardContent className="p-8">
                   <div className="absolute -right-16 -top-16 h-32 w-32 rounded-full bg-gradient-to-br from-[#00ADA9] to-[#017F7E] opacity-10 transition-all duration-300 group-hover:scale-150"></div>
-                  
+
                   <div className="relative space-y-6">
                     <div className="flex justify-center">
                       <div className="rounded-full bg-[#e0f7f6] p-4">
                         <service.icon className="h-8 w-8 text-[#00ADA9]" />
                       </div>
                     </div>
-                    
+
                     <h3 className="text-center text-2xl font-semibold text-[#017F7E]">
                       {service.title}
                     </h3>
@@ -141,7 +141,7 @@ const ActionAndServices = () => {
                     <p className="text-center text-gray-600">
                       {service.description}
                     </p>
-                    
+
                     <ul className="space-y-2">
                       {service.features.map((feature, index) => (
                         <li key={index} className="flex items-center justify-center space-x-2">
@@ -151,9 +151,9 @@ const ActionAndServices = () => {
                       ))}
                     </ul>
                     <Link href="/services">
-                    <button  className="w-full mt-8 rounded-lg border-2 border-[#00ADA9] px-6 py-3 text-[#017F7E] transition-all duration-300 hover:bg-[#00ADA9] hover:text-white">
-                      Learn More
-                    </button>
+                      <button className="w-full mt-8 rounded-lg border-2 border-[#00ADA9] px-6 py-3 text-[#017F7E] transition-all duration-300 hover:bg-[#00ADA9] hover:text-white">
+                        Learn More
+                      </button>
                     </Link>
                   </div>
                 </CardContent>

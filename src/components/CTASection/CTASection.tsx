@@ -1,5 +1,6 @@
 import React from 'react';
 import { Download, Phone, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const CTASection = () => {
   return (
@@ -35,11 +36,13 @@ const CTASection = () => {
             </button>
 
             {/* Contact Button */}
-            <button className="group flex items-center gap-3 bg-transparent border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white/10 transition-all duration-300 hover:scale-105 active:scale-95">
-              <Phone className="w-5 h-5" />
-              <span className="font-semibold">Contact Us</span>
-              <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-            </button>
+            <Link href={`/contact`}>
+              <button className="group flex items-center gap-3 bg-transparent border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white/10 transition-all duration-300 hover:scale-105 active:scale-95">
+                <Phone className="w-5 h-5" />
+                <span className="font-semibold">Contact Us</span>
+                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </button>
+            </Link>
           </div>
 
           {/* Additional Text */}
@@ -52,7 +55,7 @@ const CTASection = () => {
         <div className="absolute top-10 left-10 w-20 h-20 bg-white/5 rounded-full blur-xl animate-pulse-slow" />
         <div className="absolute bottom-10 right-10 w-32 h-32 bg-white/5 rounded-full blur-xl animate-pulse" />
       </div>
-    </section>
+    </section >
   );
 };
 

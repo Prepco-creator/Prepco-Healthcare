@@ -1,0 +1,98 @@
+[
+    {
+        "title": "General Information",
+        "content": {
+            "description": "PREPCO HOPE is a non-profit organization dedicated to providing healthcare services and support to underprivileged individuals, focusing on preventing and managing non-communicable diseases (Lifestyle Diseases) in Tamil Nadu. These Terms and Conditions govern your use of our website, services, and participation in our initiatives."
+        }
+    },
+    {
+        "title": "Eligibility for Services",
+        "content": {
+            "pointers": [
+                "SIRU THULI SCHEME: This scheme is available to individuals who meet the eligibility criteria under the Government’s Below Poverty Line (BPL) classification. Eligibility verification will require the submission of valid documents such as a ration card and income certificate.",
+                "UNGAL AAROGYAM SCHEME: This scheme is available to individuals of any age under the BPL criteria, with appropriate documentation proving eligibility. Children require parental BPL proof and a medical certificate.",
+                "PREPCO HOPE reserves the right to verify eligibility through the documentation provided and may refuse services to individuals who do not meet the criteria."
+            ]
+        }
+    },
+    {
+        "title": "Service Access and Membership",
+        "content": {
+            "pointers": [
+                "Membership: Upon successful verification, eligible individuals will receive a membership card valid for two years. Membership allows access to the services outlined in the respective schemes.",
+                "Mobile Number Tracking: Membership is linked to a unique mobile number to track and manage services for the enrolled individual. It is the responsibility of the member to ensure their contact information is up to date."
+            ]
+        }
+    },
+    {
+        "title": "Services Provided",
+        "content": {
+            "description": "PREPCO HOPE provides a range of free and subsidized healthcare services, including consultations, screenings, treatments, and diagnostics. The specific services available depend on the scheme under which the individual is enrolled.",
+            "pointers": [
+                "SIRU THULI SCHEME: Free services include diabetic care, blood pressure management, cardiac investigations, and master health checkups.",
+                "UNGAL AAROGYAM SCHEME: Subsidized services include dental care, blood/liver tests, women’s health checkups, physiotherapy sessions, and more.",
+                "PREPCO HOPE reserves the right to modify, suspend, or discontinue any services at its discretion."
+            ]
+        }
+    },
+    {
+        "title": "Donations and Financial Contributions",
+        "content": {
+            "pointers": [
+                "Donations: Donations to PREPCO HOPE are voluntary and can be made via the website or at authorized locations. Donations are non-refundable and will be used exclusively for the purposes outlined in our mission, including providing healthcare services and supporting our programs. Tax exemption Under sec. 80(G) of the Income Tax Act,1961.",
+                "Use of Funds: Donations will be allocated in accordance with the priorities of PREPCO HOPE, with a focus on enhancing healthcare services, community outreach, and educational initiatives related to lifestyle diseases prevention."
+            ]
+        }
+    },
+    {
+        "title": "Privacy and Data Protection",
+        "content": {
+            "description": "PREPCO HOPE values the privacy and confidentiality of its members and donors. We collect personal information, such as contact details, medical records, and eligibility documents, solely for the purpose of administering services. This information will not be shared with third parties without prior consent, except as required by law.",
+            "pointers": [
+                "By providing personal data, you consent to the collection and use of such data in accordance with our Privacy Policy, which is available on our website."
+            ]
+        }
+    },
+    {
+        "title": "Limitation of Liability",
+        "content": {
+            "description": "PREPCO HOPE strives to provide accurate and timely services but makes no representations or warranties regarding the results or outcomes of any healthcare service provided. We are not liable for any injuries, losses, or damages arising from the use of our services, except as required by law.",
+            "pointers": [
+                "Medical Responsibility: While PREPCO HOPE offers healthcare services, the responsibility for following prescribed treatments and advice lies with the individual receiving the service. We encourage all participants to consult with their primary healthcare provider for further guidance."
+            ]
+        }
+    },
+    {
+        "title": "Terms of Participation",
+        "content": {
+            "pointers": [
+                "Abide by the eligibility criteria and guidelines set forth for each scheme.",
+                "Provide accurate, truthful information during the registration process.",
+                "Keep your membership information (including contact details) up to date.",
+                "Comply with any rules, policies, or instructions provided by PREPCO HOPE."
+            ]
+        }
+    },
+    {
+        "title": "Modification of Terms",
+        "content": {
+            "description": "PREPCO HOPE reserves the right to modify these Terms and Conditions at any time without prior notice. Changes will be posted on our website, and by continuing to use our services, you accept the updated terms. We encourage you to review the Terms regularly."
+        }
+    },
+    {
+        "title": "Governing Law",
+        "content": {
+            "description": "These Terms and Conditions are governed by the laws of India. Any disputes arising out of the use of our services or participation in our schemes shall be subject to the jurisdiction of the courts in Tamil Nadu, India."
+        }
+    },
+    {
+        "title": "Contact Information",
+        "content": {
+            "pointers": [
+                "Phone: [Insert Phone Number]",
+                "Email: [Insert Email Address]",
+                "Address: [Insert Address]"
+            ]
+        }
+    }
+]

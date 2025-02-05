@@ -15,7 +15,7 @@ const GetInvolved = () => {
       description: "Your donations directly support individuals in need...",
       action: "Donate Today",
       gradient: "from-[#00ADA9] to-[#017F7E]",
-      link: "https://yourdonationpage.com"
+      link: "http://rpy.club/st/prepcohealthcare"
     },
     {
       title: "Volunteer",
@@ -105,10 +105,10 @@ const GetInvolved = () => {
               Your involvement with PREPCO HOPE can change lives...
             </p>
             <Link href="/contact">
-            <button className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 text-[#00ADA9] transition-transform hover:scale-105">
-              <Mail className="h-5 w-5" />
-              Contact Us for More Details
-            </button>
+              <button className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 text-[#00ADA9] transition-transform hover:scale-105">
+                <Mail className="h-5 w-5" />
+                Contact Us for More Details
+              </button>
             </Link>
           </div>
         </div>

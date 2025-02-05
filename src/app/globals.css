@@ -48,7 +48,7 @@ body {
 }
 
 /* Firefox compatibility */
-* {
+body {
   scrollbar-width: thin;
   scrollbar-color: #018380 #F8FFFF;
 }
@@ -64,11 +64,12 @@ html {
     background: rgba(248, 255, 255, 0.1);
     border-color: rgba(1, 131, 128, 0.2);
   }
-  
+
   ::-webkit-scrollbar-thumb {
     background: linear-gradient(45deg, #00ADA9, #018380);
   }
 }
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -97,6 +98,7 @@ html {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 20 14.3% 4.1%;
     --foreground: 60 9.1% 97.8%;
@@ -124,10 +126,12 @@ html {
     --chart-5: 340 75% 55%;
   }
 }
+
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }

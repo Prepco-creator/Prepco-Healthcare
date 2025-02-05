@@ -21,7 +21,8 @@ const HealthCallToAction = () => {
       title: 'Support the Cause',
       icon: HandHeart,
       description: 'Join our mission to combat lifestyle diseases in Tamil Nadu. Your support can make a difference in community health.',
-      buttonText: 'Donate Now'
+      buttonText: 'Donate Now',
+      
     }
   ];
 
@@ -40,7 +41,7 @@ const HealthCallToAction = () => {
             Take Action Today
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-gray-600">
-            Together, we can combat the rising tide of lifestyle diseases in Tamil Nadu. 
+            Together, we can combat the rising tide of lifestyle diseases in Tamil Nadu.
             Join us in creating a healthier future for our community.
           </p>
         </div>
@@ -48,29 +49,29 @@ const HealthCallToAction = () => {
         {/* Action Cards */}
         <div className="grid gap-8 md:grid-cols-3">
           {actions.map((action) => (
-            <Card 
+            <Card
               key={action.title}
               className="group relative overflow-hidden backdrop-blur-sm transition-all duration-300 hover:shadow-lg"
             >
               <CardContent className="p-6">
                 {/* Animated gradient circle */}
                 <div className="absolute -right-16 -top-16 h-32 w-32 rounded-full bg-gradient-to-br from-[#00ADA9] to-[#017F7E] opacity-10 transition-all duration-300 group-hover:scale-150"></div>
-                
+
                 <div className="relative space-y-4">
                   <div className="flex justify-center">
                     <div className="rounded-full bg-[#e0f7f6] p-4">
                       <action.icon className="h-8 w-8 text-[#00ADA9]" />
                     </div>
                   </div>
-                  
+
                   <h3 className="text-center text-xl font-semibold text-[#017F7E]">
                     {action.title}
                   </h3>
-                  
+
                   <p className="text-center text-gray-600">
                     {action.description}
                   </p>
-                  
+
                   <button className="w-full rounded-lg bg-gradient-to-r from-[#00ADA9] to-[#017F7E] px-6 py-3 text-white transition-all duration-300 hover:shadow-md">
                     {action.buttonText}
                   </button>

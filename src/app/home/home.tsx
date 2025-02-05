@@ -7,13 +7,13 @@ import React from 'react';
 
 export default function Main() {
   return <>
-  <section className='overflow-x-hidden'>
- <Herosection/>
-{/* <MissionSection/>
+    <section>
+      <Herosection />
+      {/* <MissionSection/>
  <ServicesSection /> */}
- <JoinUsSection/>
- <ActionAndServices/>
-{/* <CTASection/> */}
-</section>
+      <JoinUsSection />
+      <ActionAndServices />
+      {/* <CTASection/> */}
+    </section>
   </>;
 }
