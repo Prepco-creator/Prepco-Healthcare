@@ -90,7 +90,7 @@ const ContactTerms = () => {
               <p className="rounded-full bg-white/20 px-4 py-2 text-sm">
                 Tax exemption Under sec. 80(G)
               </p>
-              <a href="http://rpy.club/st/prepcohealthcare">
+              <a href="#">
                 <button className="rounded-full bg-white px-8 py-3 font-semibold text-[#00ADA9] transition-transform hover:scale-105">
                   Make a Donation
                 </button>

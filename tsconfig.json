@@ -28,7 +28,8 @@
       ]
     },
     "noUnusedLocals": false,
-    "noUnusedParameters": false
+    "noUnusedParameters": false,
+    
   },
   "include": [
     "next-env.d.ts",

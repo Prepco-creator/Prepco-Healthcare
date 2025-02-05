@@ -15,7 +15,7 @@ const GetInvolved = () => {
       description: "Your donations directly support individuals in need...",
       action: "Donate Today",
       gradient: "from-[#00ADA9] to-[#017F7E]",
-      link: "http://rpy.club/st/prepcohealthcare"
+      link: "#"
     },
     {
       title: "Volunteer",

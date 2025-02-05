@@ -13,6 +13,8 @@ import {
   TestTube,
   Activity as Therapy,
   Users,
+  Heart,
+  BriefcaseMedicalIcon,
 } from "lucide-react";
 import Image from 'next/image';
 import { images } from '../../../public/assets';
@@ -52,7 +54,7 @@ const Services = () => {
                 <div className="md:col-span-4 relative h-[300px] md:h-[400px]">
                   <div className="relative w-full h-full overflow-hidden rounded-lg">
                     <Image
-                      src={images.jpgs.dental}
+                      src={`/Images/jpg/doctor-checking-village-man.jpg`}
                       alt="Dental services"
                       fill
                       className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -102,6 +104,20 @@ const Services = () => {
                           <div>
                             <h5 className="font-semibold text-[#017F7E]">Diabetic Care & BP</h5>
                             <p className="text-sm text-gray-600">Consultations, Diabetic tests, Insulin therapy</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start rounded-lg bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+                          <BriefcaseMedicalIcon className="mr-3 h-6 w-6 text-[#00ADA9]" />
+                          <div>
+                            <h5 className="font-semibold text-[#017F7E]">Master Health Checkup</h5>
+                            <p className="text-sm text-gray-600">Comprehensive health checkup with consultation.</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start rounded-lg bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+                          <Heart className="mr-3 h-6 w-6 text-[#00ADA9]" />
+                          <div>
+                            <h5 className="font-semibold text-[#017F7E]">Cardiac Investigation</h5>
+                            <p className="text-sm text-gray-600">ECG, Echocardiogram, Cardiac medicines.</p>
                           </div>
                         </div>
                         {/* Repeat for other services */}

@@ -39,11 +39,10 @@ const Navbar = () => {
           <Link href="/" passHref>
             <div className="flex items-center space-x-3 rtl:space-x-reverse">
               <Image
-                src={isMenuOpen ? images.svgs.logo : images.svgs.logo}
+                src={`/Images/png/prepco-logo-2.png`}
                 alt="Flowbite Logo"
                 width={133}
                 height={43}
-                className="h-8"
               />
             </div>
           </Link>
