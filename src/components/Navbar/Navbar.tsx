@@ -2,10 +2,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { images } from "../../../public/assets";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import {  X } from "lucide-react";
+import { X } from "lucide-react";
 
 
 const Navbar = () => {
