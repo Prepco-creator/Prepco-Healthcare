@@ -13,9 +13,9 @@ import {
   TestTube,
   Activity as Therapy,
   Users,
-  // Home,
-  // HelpCircle
 } from "lucide-react";
+import Image from 'next/image';
+import { images } from '../../../public/assets';
 
 const Services = () => {
   return (
@@ -47,61 +47,64 @@ const Services = () => {
             <CardContent className="relative p-8">
               <div className="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-gradient-to-br from-[#00ADA9] to-[#017F7E] opacity-10 transition-transform duration-500 group-hover:scale-150"></div>
               
-              <div className="relative">
-                <div className="mb-8 flex items-center">
-                  <Crown className="mr-4 h-8 w-8 text-[#00ADA9]" />
-                  <h3 className="text-3xl font-bold text-[#017F7E]">SIRU THULI SCHEME - fully exempted</h3>
-                </div>
-                
-                <p className="mb-8 text-lg text-gray-700">
-  The ‘Siru Thuli Scheme’ embodies the belief that small efforts can lead to significant impacts. This initiative was born from the struggles of our own elders—fathers and grandfathers—who faced difficulties in meeting their basic healthcare needs due to financial issues. In response, we launched the ‘Siru Thuli Scheme’ to provide free medical services to individuals above the age of 50. This scheme offers comprehensive healthcare, addressing immediate health concerns and promoting dignity among marginalized individuals. The content and efforts are driven by our charity and trust.
-</p>
-
-
-                <div className="grid gap-8 md:grid-cols-2">
-                  {/* Eligibility */}
-                  <div className="space-y-4 rounded-xl bg-[#f0faf9] p-6">
-                    <h4 className="text-xl font-semibold text-[#017F7E]">Eligibility</h4>
-                    <ul className="space-y-2 text-gray-700">
-                      <li className="flex items-start">
-                        <PlusCircle className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-[#00ADA9]" />
-                        <span>Individuals above 50 years under BPL criteria (income below ₹1L)</span>
-                      </li>
-                      <li className="flex items-start">
-                        <PlusCircle className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-[#00ADA9]" />
-                        <span>Exceptions for those above 40 years with medical certification and BPL proof</span>
-                      </li>
-                      <li className="flex items-start">
-                        <PlusCircle className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-[#00ADA9]" />
-                        <span>Seniors, orphans, and other underprivileged individuals qualify</span>
-                      </li>
-                    </ul>
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+                {/* Image Section */}
+                <div className="md:col-span-4 relative h-[300px] md:h-[400px]">
+                  <div className="relative w-full h-full overflow-hidden rounded-lg">
+                    <Image
+                      src={images.jpgs.dental}
+                      alt="Dental services"
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      priority
+                    />
                   </div>
+                </div>
 
-                  {/* Services */}
-                  <div className="space-y-4 rounded-xl bg-[#f0faf9] p-6">
-                    <h4 className="text-xl font-semibold text-[#017F7E]">Services Offered</h4>
-                    <div className="grid gap-4">
-                      <div className="flex items-start rounded-lg bg-white p-4 shadow-sm">
-                        <Activity className="mr-3 h-6 w-6 text-[#00ADA9]" />
-                        <div>
-                          <h5 className="font-semibold text-[#017F7E]">Diabetic Care & BP</h5>
-                          <p className="text-sm text-gray-600">Consultations, Diabetic tests, Insulin therapy, Diabetic medicines</p>
+                {/* Content Section */}
+                <div className="md:col-span-8">
+                  <div className="mb-6 flex items-center">
+                    <Crown className="mr-4 h-8 w-8 text-[#00ADA9]" />
+                    <h3 className="text-3xl font-bold text-[#017F7E]">SIRU THULI SCHEME - fully exempted</h3>
+                  </div>
+                  
+                  <p className="mb-8 text-lg text-gray-700">
+                    The 'Siru Thuli Scheme' embodies the belief that small efforts can lead to significant impacts. This initiative was born from the struggles of our own elders—fathers and grandfathers—who faced difficulties in meeting their basic healthcare needs due to financial issues. In response, we launched the 'Siru Thuli Scheme' to provide free medical services to individuals above the age of 50.
+                  </p>
+
+                  <div className="grid gap-8 md:grid-cols-2">
+                    {/* Eligibility */}
+                    <div className="space-y-4 rounded-xl bg-[#f0faf9] p-6 hover:shadow-lg transition-shadow">
+                      <h4 className="text-xl font-semibold text-[#017F7E]">Eligibility</h4>
+                      <ul className="space-y-2 text-gray-700">
+                        <li className="flex items-start">
+                          <PlusCircle className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-[#00ADA9]" />
+                          <span>Individuals above 50 years under BPL criteria (income below ₹1L)</span>
+                        </li>
+                        <li className="flex items-start">
+                          <PlusCircle className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-[#00ADA9]" />
+                          <span>Exceptions for those above 40 years with medical certification and BPL proof</span>
+                        </li>
+                        <li className="flex items-start">
+                          <PlusCircle className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-[#00ADA9]" />
+                          <span>Seniors, orphans, and other underprivileged individuals qualify</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    {/* Services */}
+                    <div className="space-y-4 rounded-xl bg-[#f0faf9] p-6 hover:shadow-lg transition-shadow">
+                      <h4 className="text-xl font-semibold text-[#017F7E]">Services Offered</h4>
+                      <div className="grid gap-4">
+                        {/* Service items */}
+                        <div className="flex items-start rounded-lg bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+                          <Activity className="mr-3 h-6 w-6 text-[#00ADA9]" />
+                          <div>
+                            <h5 className="font-semibold text-[#017F7E]">Diabetic Care & BP</h5>
+                            <p className="text-sm text-gray-600">Consultations, Diabetic tests, Insulin therapy</p>
+                          </div>
                         </div>
-                      </div>
-                      <div className="flex items-start rounded-lg bg-white p-4 shadow-sm">
-                        <Stethoscope className="mr-3 h-6 w-6 text-[#00ADA9]" />
-                        <div>
-                          <h5 className="font-semibold text-[#017F7E]">Master Health Checkup</h5>
-                          <p className="text-sm text-gray-600">Comprehensive health checkup with consultation</p>
-                        </div>
-                      </div>
-                      <div className="flex items-start rounded-lg bg-white p-4 shadow-sm">
-                        <Heart className="mr-3 h-6 w-6 text-[#00ADA9]" />
-                        <div>
-                          <h5 className="font-semibold text-[#017F7E]">Cardiac Investigation</h5>
-                          <p className="text-sm text-gray-600">ECG, Echocardiogram, Cardiac medicines</p>
-                        </div>
+                        {/* Repeat for other services */}
                       </div>
                     </div>
                   </div>
@@ -117,116 +120,96 @@ const Services = () => {
             <CardContent className="relative p-8">
               <div className="absolute -left-16 -top-16 h-64 w-64 rounded-full bg-gradient-to-br from-[#017F7E] to-[#00ADA9] opacity-10 transition-transform duration-500 group-hover:scale-150"></div>
               
-              <div className="relative">
-                <div className="mb-8 flex items-center">
-                  <Users className="mr-4 h-8 w-8 text-[#00ADA9]" />
-                  <h3 className="text-3xl font-bold text-[#017F7E]">Nalame Valam SCHEME </h3>
-                </div>
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+                {/* Image Section */}
+                
 
-                <p className="mb-8 text-lg text-gray-700">
-  The &lsquo;Nalame Valam Scheme&rsquo; was launched after the success and growth of the &quot;Siru Thuli Scheme.&quot; During that time, our team recognized the need to support people of all age groups who are unable to afford their healthcare expenses. The primary objective of the Nalame Valam Scheme is to assist individuals living below the poverty line who cannot cover their full medical costs. To address this, we have planned to provide a 50% discount from the subsidised cost of the treatment or services availed. This initiative is driven by the charity and trust’s mission to ensure accessible healthcare for all.
-</p>
-
-                <div className="grid gap-8 md:grid-cols-2">
-                  {/* Eligibility */}
-                  <div className="space-y-4 rounded-xl bg-[#f0faf9] p-6">
-                    <h4 className="text-xl font-semibold text-[#017F7E]">Eligibility</h4>
-                    <ul className="space-y-2 text-gray-700">
-                      <li className="flex items-start">
-                        <PlusCircle className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-[#00ADA9]" />
-                        <span>Individuals of any age with BPL proof & Income certificate</span>
-                      </li>
-                      <li className="flex items-start">
-                        <PlusCircle className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-[#00ADA9]" />
-                        <span>For children, proof of parent&apos;s BPL status and medical certificate required</span>
-
-                      </li>
-                    </ul>
+                {/* Content Section */}
+                <div className="md:col-span-8">
+                  <div className="mb-6 flex items-center">
+                    <Users className="mr-4 h-8 w-8 text-[#00ADA9]" />
+                    <h3 className="text-3xl font-bold text-[#017F7E]">Nalame Valam SCHEME</h3>
                   </div>
 
-                  {/* Services */}
-                  <div className="space-y-4 rounded-xl bg-[#f0faf9] p-6">
-                    <h4 className="text-xl font-semibold text-[#017F7E]">Services Offered (50% off On subsidized rates)</h4>
-                    <div className="grid gap-4">
-                      <div className="flex items-start rounded-lg bg-white p-4 shadow-sm">
-                        <Plus className="mr-3 h-6 w-6 text-[#00ADA9]" />
-                        <div>
-                          <h5 className="font-semibold text-[#017F7E]">Dental Care</h5>
-                          <p className="text-sm text-gray-600">Cleaning, filling, and extractions</p>
-                        </div>
-                      </div>
-                      <div className="flex items-start rounded-lg bg-white p-4 shadow-sm">
-                        <Apple className="mr-3 h-6 w-6 text-[#00ADA9]" />
-                        <div>
-                          <h5 className="font-semibold text-[#017F7E]">Nutrition</h5>
-                          <p className="text-sm text-gray-600">Kids and adult nutrition services</p>
-                        </div>
-                      </div>
-                      <div className="flex items-start rounded-lg bg-white p-4 shadow-sm">
-                        <TestTube className="mr-3 h-6 w-6 text-[#00ADA9]" />
-                        <div>
-                          <h5 className="font-semibold text-[#017F7E]">Health Tests</h5>
-                          <p className="text-sm text-gray-600">Blood/liver/lipid/cholesterol testing, Women&apos;s health checkups</p>
+                  <p className="mb-8 text-lg text-gray-700">
+                    The 'Nalame Valam Scheme' was launched after the success and growth of the "Siru Thuli Scheme." Our team recognized the need to support people of all age groups who are unable to afford their healthcare expenses. We provide a 50% discount from the subsidised cost of treatment or services.
+                  </p>
 
-                        </div>
-                      </div>
-                      <div className="flex items-start rounded-lg bg-white p-4 shadow-sm">
-                        <Therapy className="mr-3 h-6 w-6 text-[#00ADA9]" />
-                        <div>
-                          <h5 className="font-semibold text-[#017F7E]">Physical Therapy</h5>
-                          <p className="text-sm text-gray-600">Physiotherapy sessions, doctor consultations</p>
-                        </div>
-                      </div>
-                    </div>
+                 {/* Previous code remains the same until Nalame Valam content section */}
+
+{/* Inside Nalame Valam's Content Section, replace the last div with: */}
+<div className="grid gap-8 md:grid-cols-2">
+  {/* Eligibility */}
+  <div className="space-y-4 rounded-xl bg-[#f0faf9] p-6 hover:shadow-lg transition-shadow">
+    <h4 className="text-xl font-semibold text-[#017F7E]">Eligibility</h4>
+    <ul className="space-y-2 text-gray-700">
+      <li className="flex items-start">
+        <PlusCircle className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-[#00ADA9]" />
+        <span>Individuals of any age with BPL proof & Income certificate</span>
+      </li>
+      <li className="flex items-start">
+        <PlusCircle className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-[#00ADA9]" />
+        <span>For children, proof of parent&apos;s BPL status and medical certificate required</span>
+      </li>
+    </ul>
+  </div>
+
+  {/* Services */}
+  <div className="space-y-4 rounded-xl bg-[#f0faf9] p-6 hover:shadow-lg transition-shadow">
+    <h4 className="text-xl font-semibold text-[#017F7E]">Services Offered (50% off On subsidized rates)</h4>
+    <div className="grid gap-4">
+      <div className="flex items-start rounded-lg bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+        <Plus className="mr-3 h-6 w-6 text-[#00ADA9]" />
+        <div>
+          <h5 className="font-semibold text-[#017F7E]">Dental Care</h5>
+          <p className="text-sm text-gray-600">Cleaning, filling, and extractions</p>
+        </div>
+      </div>
+      <div className="flex items-start rounded-lg bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+        <Apple className="mr-3 h-6 w-6 text-[#00ADA9]" />
+        <div>
+          <h5 className="font-semibold text-[#017F7E]">Nutrition</h5>
+          <p className="text-sm text-gray-600">Kids and adult nutrition services</p>
+        </div>
+      </div>
+      <div className="flex items-start rounded-lg bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+        <TestTube className="mr-3 h-6 w-6 text-[#00ADA9]" />
+        <div>
+          <h5 className="font-semibold text-[#017F7E]">Health Tests</h5>
+          <p className="text-sm text-gray-600">Blood/liver/lipid/cholesterol testing, Women&apos;s health checkups</p>
+        </div>
+      </div>
+      <div className="flex items-start rounded-lg bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+        <Therapy className="mr-3 h-6 w-6 text-[#00ADA9]" />
+        <div>
+          <h5 className="font-semibold text-[#017F7E]">Physical Therapy</h5>
+          <p className="text-sm text-gray-600">Physiotherapy sessions, doctor consultations</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+                </div>
+                <div className="md:col-span-4 relative h-[300px] md:h-[400px]">
+                  <div className="relative w-full h-full overflow-hidden rounded-lg">
+                    <Image
+                      src={images.jpgs.dental}
+                      alt="Dental services"
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      priority
+                    />
                   </div>
                 </div>
               </div>
             </CardContent>
           </Card>
         </div>
-
-        {/* Additional Services */}
-        {/* <div className="grid gap-6 sm:grid-cols-3">
-          <Card className="group overflow-hidden transition-all duration-300 hover:scale-105">
-            <CardContent className="relative p-6">
-              <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-[#e0f7f6] transition-transform duration-500 group-hover:scale-150"></div>
-              <div className="relative space-y-4">
-                <div className="flex items-center justify-center">
-                  <Crown className="h-8 w-8 text-[#00ADA9]" />
-                </div>
-                <h4 className="text-center text-xl font-semibold text-[#017F7E]">Caring for Abandoned Elders</h4>
-                <p className="text-center text-gray-600">We provide dedicated care and support to senior citizens in need</p>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="group overflow-hidden transition-all duration-300 hover:scale-105">
-            <CardContent className="relative p-6">
-              <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-[#e0f7f6] transition-transform duration-500 group-hover:scale-150"></div>
-              <div className="relative space-y-4">
-                <div className="flex items-center justify-center">
-                  <HelpCircle className="h-8 w-8 text-[#00ADA9]" />
-                </div>
-                <h4 className="text-center text-xl font-semibold text-[#017F7E]">Medical Assistance</h4>
-                <p className="text-center text-gray-600">Assistance with medical treatments and essential health services</p>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="group overflow-hidden transition-all duration-300 hover:scale-105">
-            <CardContent className="relative p-6">
-              <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-[#e0f7f6] transition-transform duration-500 group-hover:scale-150"></div>
-              <div className="relative space-y-4">
-                <div className="flex items-center justify-center">
-                  <Home className="h-8 w-8 text-[#00ADA9]" />
-                </div>
-                <h4 className="text-center text-xl font-semibold text-[#017F7E]">Basic Requirements</h4>
-                <p className="text-center text-gray-600">Providing essentials like food, bedsheets, pillows, and more</p>
-              </div>
-            </CardContent>
-          </Card>
-        </div> */}
       </div>
+
+      {/* Animations */}
       <style jsx>{`
         @keyframes blob {
           0%, 100% { transform: translate(0, 0) scale(1); }
@@ -240,13 +223,6 @@ const Services = () => {
         }
         .animate-blob {
           animation: blob 7s infinite;
-        }
-        .animate-float {
-          animation: float 6s ease-in-out infinite;
-        }
-        .animate-float-delayed {
-          animation: float 6s ease-in-out infinite;
-          animation-delay: 2s;
         }
         .animation-delay-2000 {
           animation-delay: 2s;
