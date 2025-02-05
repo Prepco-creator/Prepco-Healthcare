@@ -4,10 +4,11 @@ import React, { useState } from 'react';
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import NumberCTAPopup from '../NumberCTAPopup/NumberCTAPopup';
+// import NumberCTAPopup from '../NumberCTAPopup/NumberCTAPopup';
+import { X } from 'lucide-react';
 
 const JoinUsSection = () => {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
   return (
     <section className="relative min-h-screen w-full overflow-hidden bg-gradient-to-b from-[#f0faf9] to-white py-20">
       {/* Animated background elements */}
@@ -54,26 +55,38 @@ const JoinUsSection = () => {
             </Link>
 
             {/* Volunteer card */}
-            <div onClick={() => setIsPopupOpen(true)} className="group/card cursor-pointer">
+            <div onClick={() => setShowPopup(true)} className="group/card cursor-pointer">
               <Card className="overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <CardContent className="relative p-6">
                   <div className="absolute -right-16 -top-16 h-32 w-32 rounded-full bg-[#c0f8f7] transition-all duration-300 group-hover/card:scale-150"></div>
                   <div className="relative">
                     <h3 className="mb-2 text-2xl font-semibold text-[#017F7E]">Volunteer With Us</h3>
                     <p className="mb-4 text-gray-600">Join our team of dedicated volunteers and help make healthcare accessible to all.</p>
-                    <Button className="bg-[#00ADA9] text-white transition-all duration-300 hover:bg-[#017F7E]">
+                    <Button onClick={() => setShowPopup(true)} className="bg-[#00ADA9] text-white transition-all duration-300 hover:bg-[#017F7E]">
                       Join Team
                     </Button>
                   </div>
                 </CardContent>
               </Card>
             </div>
-            <NumberCTAPopup isOpen={isPopupOpen} setIsOpen={setIsPopupOpen} />
+             {/* Contact Number Popup */}
+        {showPopup && (
+          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+            <div className="relative w-96 rounded-lg bg-white p-6 shadow-lg">
+              <button onClick={() => setShowPopup(false)} className="absolute right-4 top-4 text-gray-600 hover:text-gray-900">
+                <X className="h-5 w-5" />
+              </button>
+              <h2 className="mb-4 text-xl font-semibold text-[#017F7E]">Contact Us</h2>
+              <p className="text-lg text-gray-700">📞 Call us at: <span className="font-bold">+91 98765 43210</span></p>
+              <p className="text-lg text-gray-700">📧 Email: <a href="mailto:contact@prepco.org" className="text-[#00ADA9] hover:underline">contact@prepco.org</a></p>
+            </div>
+          </div>
+        )}
           </div>
 
           {/* Learn more section */}
           <div className="mt-12 text-center">
-            <Link href="/learn-more" className="group/learn inline-block">
+            <Link href="/about" className="group/learn inline-block">
               <span className="relative inline-block text-lg font-medium text-[#017F7E] transition-all duration-300 group-hover/learn:text-[#00ADA9]">
                 Learn More About Our Impact
                 <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-[#00ADA9] transition-all duration-300 group-hover/learn:w-full"></span>

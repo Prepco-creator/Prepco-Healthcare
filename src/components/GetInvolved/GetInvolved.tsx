@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, HandHeart, Share2, ArrowRight, Mail, X } from "lucide-react";
+import Link from 'next/link';
 
 const GetInvolved = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -103,10 +104,12 @@ const GetInvolved = () => {
             <p className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed">
               Your involvement with PREPCO HOPE can change lives...
             </p>
-            <button onClick={() => setShowPopup(true)} className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 text-[#00ADA9] transition-transform hover:scale-105">
+            <Link href="/contact">
+            <button className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 text-[#00ADA9] transition-transform hover:scale-105">
               <Mail className="h-5 w-5" />
               Contact Us for More Details
             </button>
+            </Link>
           </div>
         </div>
 
