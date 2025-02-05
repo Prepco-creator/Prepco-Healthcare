@@ -1,14 +1,13 @@
+/* eslint-disable-next-line react/no-unescaped-entities */
 "use client";
 
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
-import { 
-  Heart, 
-  Stethoscope, 
-  Activity, 
-  PlusCircle, 
-  Crown, 
-  Plus, 
+import {
+  Activity,
+  PlusCircle,
+  Crown,
+  Plus,
   Apple,
   TestTube,
   Activity as Therapy,
@@ -35,8 +34,8 @@ const Services = () => {
             <div className="absolute -bottom-2 left-0 h-1 w-full bg-gradient-to-r from-[#00ADA9] to-[#017F7E]"></div>
           </h2>
           <p className="mx-auto max-w-4xl text-lg leading-relaxed text-gray-700">
-            At PREPCO HOPE, we offer a wide range of healthcare services aimed at preventing and managing Lifestyle diseases, 
-            including diabetes, hypertension, and cardiac diseases. Our services focus on early detection, regular monitoring, 
+            At PREPCO HOPE, we offer a wide range of healthcare services aimed at preventing and managing Lifestyle diseases,
+            including diabetes, hypertension, and cardiac diseases. Our services focus on early detection, regular monitoring,
             and providing preventive care to the underprivileged, especially those at risk due to sedentary lifestyles and poor diet.
           </p>
         </div>
@@ -46,7 +45,7 @@ const Services = () => {
           <Card className="group overflow-hidden">
             <CardContent className="relative p-8">
               <div className="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-gradient-to-br from-[#00ADA9] to-[#017F7E] opacity-10 transition-transform duration-500 group-hover:scale-150"></div>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
                 {/* Image Section */}
                 <div className="md:col-span-4 relative h-[300px] md:h-[400px]">
@@ -67,7 +66,7 @@ const Services = () => {
                     <Crown className="mr-4 h-8 w-8 text-[#00ADA9]" />
                     <h3 className="text-3xl font-bold text-[#017F7E]">SIRU THULI SCHEME - fully exempted</h3>
                   </div>
-                  
+
                   <p className="mb-8 text-lg text-gray-700">
                     The 'Siru Thuli Scheme' embodies the belief that small efforts can lead to significant impacts. This initiative was born from the struggles of our own elders—fathers and grandfathers—who faced difficulties in meeting their basic healthcare needs due to financial issues. In response, we launched the 'Siru Thuli Scheme' to provide free medical services to individuals above the age of 50.
                   </p>
@@ -119,10 +118,10 @@ const Services = () => {
           <Card className="group overflow-hidden">
             <CardContent className="relative p-8">
               <div className="absolute -left-16 -top-16 h-64 w-64 rounded-full bg-gradient-to-br from-[#017F7E] to-[#00ADA9] opacity-10 transition-transform duration-500 group-hover:scale-150"></div>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
                 {/* Image Section */}
-                
+
 
                 {/* Content Section */}
                 <div className="md:col-span-8">
@@ -135,60 +134,60 @@ const Services = () => {
                     The 'Nalame Valam Scheme' was launched after the success and growth of the "Siru Thuli Scheme." Our team recognized the need to support people of all age groups who are unable to afford their healthcare expenses. We provide a 50% discount from the subsidised cost of treatment or services.
                   </p>
 
-                 {/* Previous code remains the same until Nalame Valam content section */}
+                  {/* Previous code remains the same until Nalame Valam content section */}
 
-{/* Inside Nalame Valam's Content Section, replace the last div with: */}
-<div className="grid gap-8 md:grid-cols-2">
-  {/* Eligibility */}
-  <div className="space-y-4 rounded-xl bg-[#f0faf9] p-6 hover:shadow-lg transition-shadow">
-    <h4 className="text-xl font-semibold text-[#017F7E]">Eligibility</h4>
-    <ul className="space-y-2 text-gray-700">
-      <li className="flex items-start">
-        <PlusCircle className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-[#00ADA9]" />
-        <span>Individuals of any age with BPL proof & Income certificate</span>
-      </li>
-      <li className="flex items-start">
-        <PlusCircle className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-[#00ADA9]" />
-        <span>For children, proof of parent&apos;s BPL status and medical certificate required</span>
-      </li>
-    </ul>
-  </div>
+                  {/* Inside Nalame Valam's Content Section, replace the last div with: */}
+                  <div className="grid gap-8 md:grid-cols-2">
+                    {/* Eligibility */}
+                    <div className="space-y-4 rounded-xl bg-[#f0faf9] p-6 hover:shadow-lg transition-shadow">
+                      <h4 className="text-xl font-semibold text-[#017F7E]">Eligibility</h4>
+                      <ul className="space-y-2 text-gray-700">
+                        <li className="flex items-start">
+                          <PlusCircle className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-[#00ADA9]" />
+                          <span>Individuals of any age with BPL proof & Income certificate</span>
+                        </li>
+                        <li className="flex items-start">
+                          <PlusCircle className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-[#00ADA9]" />
+                          <span>For children, proof of parent&apos;s BPL status and medical certificate required</span>
+                        </li>
+                      </ul>
+                    </div>
 
-  {/* Services */}
-  <div className="space-y-4 rounded-xl bg-[#f0faf9] p-6 hover:shadow-lg transition-shadow">
-    <h4 className="text-xl font-semibold text-[#017F7E]">Services Offered (50% off On subsidized rates)</h4>
-    <div className="grid gap-4">
-      <div className="flex items-start rounded-lg bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
-        <Plus className="mr-3 h-6 w-6 text-[#00ADA9]" />
-        <div>
-          <h5 className="font-semibold text-[#017F7E]">Dental Care</h5>
-          <p className="text-sm text-gray-600">Cleaning, filling, and extractions</p>
-        </div>
-      </div>
-      <div className="flex items-start rounded-lg bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
-        <Apple className="mr-3 h-6 w-6 text-[#00ADA9]" />
-        <div>
-          <h5 className="font-semibold text-[#017F7E]">Nutrition</h5>
-          <p className="text-sm text-gray-600">Kids and adult nutrition services</p>
-        </div>
-      </div>
-      <div className="flex items-start rounded-lg bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
-        <TestTube className="mr-3 h-6 w-6 text-[#00ADA9]" />
-        <div>
-          <h5 className="font-semibold text-[#017F7E]">Health Tests</h5>
-          <p className="text-sm text-gray-600">Blood/liver/lipid/cholesterol testing, Women&apos;s health checkups</p>
-        </div>
-      </div>
-      <div className="flex items-start rounded-lg bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
-        <Therapy className="mr-3 h-6 w-6 text-[#00ADA9]" />
-        <div>
-          <h5 className="font-semibold text-[#017F7E]">Physical Therapy</h5>
-          <p className="text-sm text-gray-600">Physiotherapy sessions, doctor consultations</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                    {/* Services */}
+                    <div className="space-y-4 rounded-xl bg-[#f0faf9] p-6 hover:shadow-lg transition-shadow">
+                      <h4 className="text-xl font-semibold text-[#017F7E]">Services Offered (50% off On subsidized rates)</h4>
+                      <div className="grid gap-4">
+                        <div className="flex items-start rounded-lg bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+                          <Plus className="mr-3 h-6 w-6 text-[#00ADA9]" />
+                          <div>
+                            <h5 className="font-semibold text-[#017F7E]">Dental Care</h5>
+                            <p className="text-sm text-gray-600">Cleaning, filling, and extractions</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start rounded-lg bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+                          <Apple className="mr-3 h-6 w-6 text-[#00ADA9]" />
+                          <div>
+                            <h5 className="font-semibold text-[#017F7E]">Nutrition</h5>
+                            <p className="text-sm text-gray-600">Kids and adult nutrition services</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start rounded-lg bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+                          <TestTube className="mr-3 h-6 w-6 text-[#00ADA9]" />
+                          <div>
+                            <h5 className="font-semibold text-[#017F7E]">Health Tests</h5>
+                            <p className="text-sm text-gray-600">Blood/liver/lipid/cholesterol testing, Women&apos;s health checkups</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start rounded-lg bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+                          <Therapy className="mr-3 h-6 w-6 text-[#00ADA9]" />
+                          <div>
+                            <h5 className="font-semibold text-[#017F7E]">Physical Therapy</h5>
+                            <p className="text-sm text-gray-600">Physiotherapy sessions, doctor consultations</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
 
                 </div>

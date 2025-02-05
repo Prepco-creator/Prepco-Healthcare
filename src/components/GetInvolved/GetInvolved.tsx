@@ -83,13 +83,15 @@ const GetInvolved = () => {
                     </div>
                     <h3 className="text-center text-xl font-semibold text-[#017F7E]">{way.title}</h3>
                     <p className="text-center text-gray-600">{way.description}</p>
-                    <button
-                      onClick={way.onClick ? way.onClick : undefined}
-                      className="mx-auto mt-4 flex items-center gap-2 rounded-full bg-gradient-to-r from-[#00ADA9] to-[#017F7E] px-6 py-2 text-white transition-transform hover:scale-105"
-                    >
-                      {way.action}
-                      <ArrowRight className="h-4 w-4" />
-                    </button>
+                    <a href={way.link}>
+                      <button
+                        onClick={way.onClick ? way.onClick : undefined}
+                        className="mx-auto mt-4 flex items-center gap-2 rounded-full bg-gradient-to-r from-[#00ADA9] to-[#017F7E] px-6 py-2 text-white transition-transform hover:scale-105"
+                      >
+                        {way.action}
+                        <ArrowRight className="h-4 w-4" />
+                      </button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
